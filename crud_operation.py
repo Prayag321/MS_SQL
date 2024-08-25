@@ -1,4 +1,15 @@
+'''
+    @Author: Prayag
+    @Date: 24-08-2024 
+    @Last Modified by: Prayag Bhoir
+    @Last Modified time: 25-08-2024 
+    @Title : Python program to perform CRUD operations on MSSQL
+'''
 import pyodbc
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
 
 class DatabaseManager:
     def __init__(self, server, driver):
@@ -208,7 +219,7 @@ class DatabaseManager:
         return db_name in databases
 
 def main():
-    server = 'localhost\\SQLEXPRESS01'
+    server = os.getenv('SERVER')
     driver = '{ODBC Driver 18 for SQL Server}'
     # database = 'prayagdb'
     # password
