@@ -1,3 +1,10 @@
+"""
+@Author: Prayag Bhoir
+@Date: 24-08-2024
+@Last Modified by: Prayag Bhoir
+@Last Modified time: 4-09-2024
+@Title : Sql Problems on Covid dataset
+"""
 -- 1. Death Percentage Analysis
 USE prayagdb
 -- a. Global Death Percentage
